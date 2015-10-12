@@ -1,0 +1,138 @@
+//start-----------------------
+堆内存分配和释放是由程序员控制的。
+
+不用@autoreleasepool的话需要自己释放对象
+
+例如
+	TestClass  *p；
+	[p release];
+
+//end-----------------------
+
+//start-----------------------
+
+oc 传参数 不能传对象，需要传对象地址，返回也是要对象的地址
+- （NSString*）ChangeName：(NSString*) newName;
+//基本类型没关系
+用*表示返回对象地址，基本类型（int）functionname；不受影响
+例如	
+	classA
+	在classB中
+	（classA *）getClass；
+	如果（classA）getClass；会将对象拷贝
+//end-----------------------
+
+//start-----------------------
+使用对象时 TestClass *p;
+	p=[TestClass alloc];//先申请空间
+	p=[p init];//初始化对象
+
+完成上述俩个步骤后就可以使用对象了。
+
+//end-----------------------
+
+//start-----------------------
+对象使用，使用方法时用括号，使用属性用.
+例如
+	[p functionname:var1:var2];
+	p.shuxing=1;
+//end-----------------------
+//start-----------------------
+内存分配
+对象名----》栈中
+对象-----》堆中
+要使用堆中的对象，必须使用指针“引用”
+堆内存，不会自动释放，由程序控制堆。
+对象调用方法（调用方法在代码区）；
+//end-----------------------
+//start-----------------------
+类的定义 例：
+Father.h
+	#import <Foundation/Foundation.h>
+	接口部分
+	@interfac Father: NSObject
+	 属性的定义
+	@property int a; 
+	@property int b;
+	 方法的申明
+	 
+	 - (void) show: (int) val1 :(int) val2;
+	 - (void) showA:(int)a B:(int) b;
+	 //方法全称 showA:B: 冒号也是方法里面的内容
+	 //因此可以将方法名拆分，利于记忆
+	 //showA:B: 推荐方法名拆分方法
+	 - (void) getAB;
+	 @end
+
+Father.m
+	#import "Father.h"
+	@implementation Father
+	- (void) show : (int) val1 : (int) val2{
+		NSLog(@"%d,%d",val1,val2);
+		//self.xx用于获取类interface中定义的名字;
+	}
+	- (void) showA:(int)a B:(int) b{
+		NSLog(@"%d,%d",a,b);
+	}
+	- (void) getAB{
+		NSLog(@"a=%d,b=%d",self.a,self.b);
+	}
+	@end
+在main中使用
+
+#import "Father.h"
+//只要导入.h头文件就可以，使用方法的时候会自动连接.m文件
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+    Father *f=[[Father alloc] init]
+    f.a=10;
+    f.b=34;
+    [f show:12:12];
+    [f showA:22 B:34];
+    [f getAB];
+    }
+    return 0;
+}
+
+//end---------------------------------------
+
+//start-----------------------
+	实例变量可以定义在 interface 也可以定义在 implementation中。（以后再说）	
+//end-----------------------
+
+//start-----------------------
+	@property int a ;
+	等价于
+	{
+		int a;
+	}
+	@property (readonly) int value;
+	- (int) A;
+	- (void) setA:(int) a;
+
+	用@property int a;
+	实际上是自动生成set 和get 方法。
+	并且会生成_a实例变量;
+	@property (readonly) int value;
+			表示只读，即编译器只有get方法没有set方法
+
+	使用时候
+	AA *m=[[AA alloc] init];
+	m.a=34;//调用setA方法
+	NSLog(@"%d",m.a);//调用A方法获取a的值；
+	使用m.value 时候会返回_value 对象，如果需要自定义返回对象，可以重写方法
+	-（int）value{
+		return a*10;
+	}
+	在oc中'.'代表调用方法。
+	当类.属性=值 表示调用set方法；
+	变量=类.属性 表示调用get方法；
+	在oc中set方法是set加属性名 
+	例如 -(void) setA:(属性类型) value；
+	get方法就是和属性名一样，返回类型和属性名一样 
+	例如 - (属性类型) A; 
+
+	现在定义实例变量 用@property int a;这种类型；
+	//如果你不满意编译器生成的部分，可以自己写；
+//end-----------------------
