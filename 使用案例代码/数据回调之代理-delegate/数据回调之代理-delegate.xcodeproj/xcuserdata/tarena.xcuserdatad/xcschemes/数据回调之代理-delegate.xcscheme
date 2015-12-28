@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0710"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "850E73B71C311FEF0026E195"
+               BuildableName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.app"
+               BlueprintName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate"
+               ReferencedContainer = "container:&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "850E73D01C311FF00026E195"
+               BuildableName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegateTests.xctest"
+               BlueprintName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegateTests"
+               ReferencedContainer = "container:&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "850E73DB1C311FF00026E195"
+               BuildableName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegateUITests.xctest"
+               BlueprintName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegateUITests"
+               ReferencedContainer = "container:&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "850E73B71C311FEF0026E195"
+            BuildableName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.app"
+            BlueprintName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate"
+            ReferencedContainer = "container:&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "850E73B71C311FEF0026E195"
+            BuildableName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.app"
+            BlueprintName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate"
+            ReferencedContainer = "container:&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "850E73B71C311FEF0026E195"
+            BuildableName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.app"
+            BlueprintName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate"
+            ReferencedContainer = "container:&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
