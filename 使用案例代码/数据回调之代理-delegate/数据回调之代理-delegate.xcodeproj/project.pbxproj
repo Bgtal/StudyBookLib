@@ -13,27 +13,8 @@
 		850E73C61C311FEF0026E195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850E73C41C311FEF0026E195 /* Main.storyboard */; };
 		850E73C81C311FEF0026E195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850E73C71C311FEF0026E195 /* Assets.xcassets */; };
 		850E73CB1C311FEF0026E195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850E73C91C311FEF0026E195 /* LaunchScreen.storyboard */; };
-		850E73D61C311FF00026E195 /* ________delegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 850E73D51C311FF00026E195 /* ________delegateTests.m */; };
-		850E73E11C311FF00026E195 /* ________delegateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 850E73E01C311FF00026E195 /* ________delegateUITests.m */; };
 		850E73F01C31216D0026E195 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850E73EF1C31216D0026E195 /* BViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		850E73D21C311FF00026E195 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 850E73B01C311FEF0026E195 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 850E73B71C311FEF0026E195;
-			remoteInfo = "数据回调之代理-delegate";
-		};
-		850E73DD1C311FF00026E195 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 850E73B01C311FEF0026E195 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 850E73B71C311FEF0026E195;
-			remoteInfo = "数据回调之代理-delegate";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		850E73B81C311FEF0026E195 /* 数据回调之代理-delegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "数据回调之代理-delegate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,32 +27,12 @@
 		850E73C71C311FEF0026E195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		850E73CA1C311FEF0026E195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		850E73CC1C311FEF0026E195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		850E73D11C311FF00026E195 /* 数据回调之代理-delegateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "数据回调之代理-delegateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		850E73D51C311FF00026E195 /* ________delegateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "________delegateTests.m"; sourceTree = "<group>"; };
-		850E73D71C311FF00026E195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		850E73DC1C311FF00026E195 /* 数据回调之代理-delegateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "数据回调之代理-delegateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		850E73E01C311FF00026E195 /* ________delegateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "________delegateUITests.m"; sourceTree = "<group>"; };
-		850E73E21C311FF00026E195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		850E73EE1C31216D0026E195 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
 		850E73EF1C31216D0026E195 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		850E73B51C311FEF0026E195 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		850E73CE1C311FF00026E195 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		850E73D91C311FF00026E195 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				850E73BA1C311FEF0026E195 /* 数据回调之代理-delegate */,
-				850E73D41C311FF00026E195 /* 数据回调之代理-delegateTests */,
-				850E73DF1C311FF00026E195 /* 数据回调之代理-delegateUITests */,
 				850E73B91C311FEF0026E195 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				850E73B81C311FEF0026E195 /* 数据回调之代理-delegate.app */,
-				850E73D11C311FF00026E195 /* 数据回调之代理-delegateTests.xctest */,
-				850E73DC1C311FF00026E195 /* 数据回调之代理-delegateUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,24 +84,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		850E73D41C311FF00026E195 /* 数据回调之代理-delegateTests */ = {
-			isa = PBXGroup;
-			children = (
-				850E73D51C311FF00026E195 /* ________delegateTests.m */,
-				850E73D71C311FF00026E195 /* Info.plist */,
-			);
-			path = "数据回调之代理-delegateTests";
-			sourceTree = "<group>";
-		};
-		850E73DF1C311FF00026E195 /* 数据回调之代理-delegateUITests */ = {
-			isa = PBXGroup;
-			children = (
-				850E73E01C311FF00026E195 /* ________delegateUITests.m */,
-				850E73E21C311FF00026E195 /* Info.plist */,
-			);
-			path = "数据回调之代理-delegateUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,42 +104,6 @@
 			productReference = 850E73B81C311FEF0026E195 /* 数据回调之代理-delegate.app */;
 			productType = "com.apple.product-type.application";
 		};
-		850E73D01C311FF00026E195 /* 数据回调之代理-delegateTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 850E73E81C311FF00026E195 /* Build configuration list for PBXNativeTarget "数据回调之代理-delegateTests" */;
-			buildPhases = (
-				850E73CD1C311FF00026E195 /* Sources */,
-				850E73CE1C311FF00026E195 /* Frameworks */,
-				850E73CF1C311FF00026E195 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				850E73D31C311FF00026E195 /* PBXTargetDependency */,
-			);
-			name = "数据回调之代理-delegateTests";
-			productName = "数据回调之代理-delegateTests";
-			productReference = 850E73D11C311FF00026E195 /* 数据回调之代理-delegateTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		850E73DB1C311FF00026E195 /* 数据回调之代理-delegateUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 850E73EB1C311FF00026E195 /* Build configuration list for PBXNativeTarget "数据回调之代理-delegateUITests" */;
-			buildPhases = (
-				850E73D81C311FF00026E195 /* Sources */,
-				850E73D91C311FF00026E195 /* Frameworks */,
-				850E73DA1C311FF00026E195 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				850E73DE1C311FF00026E195 /* PBXTargetDependency */,
-			);
-			name = "数据回调之代理-delegateUITests";
-			productName = "数据回调之代理-delegateUITests";
-			productReference = 850E73DC1C311FF00026E195 /* 数据回调之代理-delegateUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,14 +115,6 @@
 				TargetAttributes = {
 					850E73B71C311FEF0026E195 = {
 						CreatedOnToolsVersion = 7.1.1;
-					};
-					850E73D01C311FF00026E195 = {
-						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = 850E73B71C311FEF0026E195;
-					};
-					850E73DB1C311FF00026E195 = {
-						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = 850E73B71C311FEF0026E195;
 					};
 				};
 			};
@@ -237,8 +132,6 @@
 			projectRoot = "";
 			targets = (
 				850E73B71C311FEF0026E195 /* 数据回调之代理-delegate */,
-				850E73D01C311FF00026E195 /* 数据回调之代理-delegateTests */,
-				850E73DB1C311FF00026E195 /* 数据回调之代理-delegateUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,20 +144,6 @@
 				850E73CB1C311FEF0026E195 /* LaunchScreen.storyboard in Resources */,
 				850E73C81C311FEF0026E195 /* Assets.xcassets in Resources */,
 				850E73C61C311FEF0026E195 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		850E73CF1C311FF00026E195 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		850E73DA1C311FF00026E195 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,36 +161,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		850E73CD1C311FF00026E195 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				850E73D61C311FF00026E195 /* ________delegateTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		850E73D81C311FF00026E195 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				850E73E11C311FF00026E195 /* ________delegateUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		850E73D31C311FF00026E195 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 850E73B71C311FEF0026E195 /* 数据回调之代理-delegate */;
-			targetProxy = 850E73D21C311FF00026E195 /* PBXContainerItemProxy */;
-		};
-		850E73DE1C311FF00026E195 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 850E73B71C311FEF0026E195 /* 数据回调之代理-delegate */;
-			targetProxy = 850E73DD1C311FF00026E195 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		850E73C41C311FEF0026E195 /* Main.storyboard */ = {
@@ -435,54 +285,6 @@
 			};
 			name = Release;
 		};
-		850E73E91C311FF00026E195 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "数据回调之代理-delegateTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blq.--------delegateTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/数据回调之代理-delegate.app/数据回调之代理-delegate";
-			};
-			name = Debug;
-		};
-		850E73EA1C311FF00026E195 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "数据回调之代理-delegateTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blq.--------delegateTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/数据回调之代理-delegate.app/数据回调之代理-delegate";
-			};
-			name = Release;
-		};
-		850E73EC1C311FF00026E195 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "数据回调之代理-delegateUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blq.--------delegateUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "数据回调之代理-delegate";
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		850E73ED1C311FF00026E195 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "数据回调之代理-delegateUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blq.--------delegateUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "数据回调之代理-delegate";
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -502,22 +304,7 @@
 				850E73E71C311FF00026E195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		850E73E81C311FF00026E195 /* Build configuration list for PBXNativeTarget "数据回调之代理-delegateTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				850E73E91C311FF00026E195 /* Debug */,
-				850E73EA1C311FF00026E195 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		850E73EB1C311FF00026E195 /* Build configuration list for PBXNativeTarget "数据回调之代理-delegateUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				850E73EC1C311FF00026E195 /* Debug */,
-				850E73ED1C311FF00026E195 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

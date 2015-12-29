@@ -16,23 +16,6 @@
 		850E72D81C30CC2C0026E195 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850E72D71C30CC2C0026E195 /* BViewController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		850E72BA1C30CBDF0026E195 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 850E72981C30CBDF0026E195 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 850E729F1C30CBDF0026E195;
-			remoteInfo = "方法回调之Block";
-		};
-		850E72C51C30CBDF0026E195 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 850E72981C30CBDF0026E195 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 850E729F1C30CBDF0026E195;
-			remoteInfo = "方法回调之Block";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		850E72A01C30CBDF0026E195 /* 方法回调之Block.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "方法回调之Block.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		850E72A41C30CBDF0026E195 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,28 +27,12 @@
 		850E72AF1C30CBDF0026E195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		850E72B21C30CBDF0026E195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		850E72B41C30CBDF0026E195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		850E72B91C30CBDF0026E195 /* 方法回调之BlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "方法回调之BlockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		850E72C41C30CBDF0026E195 /* 方法回调之BlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "方法回调之BlockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		850E72D61C30CC2C0026E195 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
 		850E72D71C30CC2C0026E195 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		850E729D1C30CBDF0026E195 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		850E72B61C30CBDF0026E195 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		850E72C11C30CBDF0026E195 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				850E72A01C30CBDF0026E195 /* 方法回调之Block.app */,
-				850E72B91C30CBDF0026E195 /* 方法回调之BlockTests.xctest */,
-				850E72C41C30CBDF0026E195 /* 方法回调之BlockUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,42 +104,6 @@
 			productReference = 850E72A01C30CBDF0026E195 /* 方法回调之Block.app */;
 			productType = "com.apple.product-type.application";
 		};
-		850E72B81C30CBDF0026E195 /* 方法回调之BlockTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 850E72D01C30CBDF0026E195 /* Build configuration list for PBXNativeTarget "方法回调之BlockTests" */;
-			buildPhases = (
-				850E72B51C30CBDF0026E195 /* Sources */,
-				850E72B61C30CBDF0026E195 /* Frameworks */,
-				850E72B71C30CBDF0026E195 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				850E72BB1C30CBDF0026E195 /* PBXTargetDependency */,
-			);
-			name = "方法回调之BlockTests";
-			productName = "方法回调之BlockTests";
-			productReference = 850E72B91C30CBDF0026E195 /* 方法回调之BlockTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		850E72C31C30CBDF0026E195 /* 方法回调之BlockUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 850E72D31C30CBDF0026E195 /* Build configuration list for PBXNativeTarget "方法回调之BlockUITests" */;
-			buildPhases = (
-				850E72C01C30CBDF0026E195 /* Sources */,
-				850E72C11C30CBDF0026E195 /* Frameworks */,
-				850E72C21C30CBDF0026E195 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				850E72C61C30CBDF0026E195 /* PBXTargetDependency */,
-			);
-			name = "方法回调之BlockUITests";
-			productName = "方法回调之BlockUITests";
-			productReference = 850E72C41C30CBDF0026E195 /* 方法回调之BlockUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,14 +115,6 @@
 				TargetAttributes = {
 					850E729F1C30CBDF0026E195 = {
 						CreatedOnToolsVersion = 7.1.1;
-					};
-					850E72B81C30CBDF0026E195 = {
-						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = 850E729F1C30CBDF0026E195;
-					};
-					850E72C31C30CBDF0026E195 = {
-						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = 850E729F1C30CBDF0026E195;
 					};
 				};
 			};
@@ -211,8 +132,6 @@
 			projectRoot = "";
 			targets = (
 				850E729F1C30CBDF0026E195 /* 方法回调之Block */,
-				850E72B81C30CBDF0026E195 /* 方法回调之BlockTests */,
-				850E72C31C30CBDF0026E195 /* 方法回调之BlockUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,20 +144,6 @@
 				850E72B31C30CBDF0026E195 /* LaunchScreen.storyboard in Resources */,
 				850E72B01C30CBDF0026E195 /* Assets.xcassets in Resources */,
 				850E72AE1C30CBDF0026E195 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		850E72B71C30CBDF0026E195 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		850E72C21C30CBDF0026E195 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,34 +161,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		850E72B51C30CBDF0026E195 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		850E72C01C30CBDF0026E195 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		850E72BB1C30CBDF0026E195 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 850E729F1C30CBDF0026E195 /* 方法回调之Block */;
-			targetProxy = 850E72BA1C30CBDF0026E195 /* PBXContainerItemProxy */;
-		};
-		850E72C61C30CBDF0026E195 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 850E729F1C30CBDF0026E195 /* 方法回调之Block */;
-			targetProxy = 850E72C51C30CBDF0026E195 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		850E72AC1C30CBDF0026E195 /* Main.storyboard */ = {
@@ -407,54 +285,6 @@
 			};
 			name = Release;
 		};
-		850E72D11C30CBDF0026E195 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "方法回调之BlockTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blq.-----BlockTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/方法回调之Block.app/方法回调之Block";
-			};
-			name = Debug;
-		};
-		850E72D21C30CBDF0026E195 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "方法回调之BlockTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blq.-----BlockTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/方法回调之Block.app/方法回调之Block";
-			};
-			name = Release;
-		};
-		850E72D41C30CBDF0026E195 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "方法回调之BlockUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blq.-----BlockUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "方法回调之Block";
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		850E72D51C30CBDF0026E195 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "方法回调之BlockUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blq.-----BlockUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "方法回调之Block";
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -472,24 +302,6 @@
 			buildConfigurations = (
 				850E72CE1C30CBDF0026E195 /* Debug */,
 				850E72CF1C30CBDF0026E195 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		850E72D01C30CBDF0026E195 /* Build configuration list for PBXNativeTarget "方法回调之BlockTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				850E72D11C30CBDF0026E195 /* Debug */,
-				850E72D21C30CBDF0026E195 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		850E72D31C30CBDF0026E195 /* Build configuration list for PBXNativeTarget "方法回调之BlockUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				850E72D41C30CBDF0026E195 /* Debug */,
-				850E72D51C30CBDF0026E195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

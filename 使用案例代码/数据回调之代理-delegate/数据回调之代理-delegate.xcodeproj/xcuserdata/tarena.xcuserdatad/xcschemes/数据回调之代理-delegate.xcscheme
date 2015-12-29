@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "850E73D01C311FF00026E195"
-               BuildableName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegateTests.xctest"
-               BlueprintName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegateTests"
-               ReferencedContainer = "container:&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "850E73DB1C311FF00026E195"
-               BuildableName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegateUITests.xctest"
-               BlueprintName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegateUITests"
-               ReferencedContainer = "container:&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x4ee3;&#x7406;-delegate.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

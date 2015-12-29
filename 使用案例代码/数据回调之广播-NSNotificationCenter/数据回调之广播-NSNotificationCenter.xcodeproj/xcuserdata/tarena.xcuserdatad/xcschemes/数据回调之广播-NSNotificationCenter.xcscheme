@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "850E738E1C3109590026E195"
-               BuildableName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x5e7f;&#x64ad;-NSNotificationCenterTests.xctest"
-               BlueprintName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x5e7f;&#x64ad;-NSNotificationCenterTests"
-               ReferencedContainer = "container:&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x5e7f;&#x64ad;-NSNotificationCenter.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "850E73991C3109590026E195"
-               BuildableName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x5e7f;&#x64ad;-NSNotificationCenterUITests.xctest"
-               BlueprintName = "&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x5e7f;&#x64ad;-NSNotificationCenterUITests"
-               ReferencedContainer = "container:&#x6570;&#x636e;&#x56de;&#x8c03;&#x4e4b;&#x5e7f;&#x64ad;-NSNotificationCenter.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
