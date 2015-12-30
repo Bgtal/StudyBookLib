@@ -15,6 +15,7 @@
 		851322AB1C328B2D00C0B372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851322A91C328B2D00C0B372 /* LaunchScreen.storyboard */; };
 		851322B31C32AA1700C0B372 /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 851322B21C32AA1700C0B372 /* pic.jpg */; };
 		851322B51C32B73400C0B372 /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 851322B41C32B73400C0B372 /* pic2.jpg */; };
+		85EA15D21C339C1000B127B0 /* BlocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EA15D11C339C1000B127B0 /* BlocksViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		851322AC1C328B2D00C0B372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		851322B21C32AA1700C0B372 /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
 		851322B41C32B73400C0B372 /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
+		85EA15D01C339C1000B127B0 /* BlocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksViewController.h; sourceTree = "<group>"; };
+		85EA15D11C339C1000B127B0 /* BlocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				851322B21C32AA1700C0B372 /* pic.jpg */,
 				851322B41C32B73400C0B372 /* pic2.jpg */,
 				8513229B1C328B2D00C0B372 /* Supporting Files */,
+				85EA15D01C339C1000B127B0 /* BlocksViewController.h */,
+				85EA15D11C339C1000B127B0 /* BlocksViewController.m */,
 			);
 			path = "动画之UIView动画";
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			files = (
 				851322A31C328B2D00C0B372 /* ViewController.m in Sources */,
 				851322A01C328B2D00C0B372 /* AppDelegate.m in Sources */,
+				85EA15D21C339C1000B127B0 /* BlocksViewController.m in Sources */,
 				8513229D1C328B2D00C0B372 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +312,7 @@
 				851322B11C328B2D00C0B372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

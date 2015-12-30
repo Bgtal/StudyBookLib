@@ -12,8 +12,9 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imgView;
 @property (strong, nonatomic) IBOutlet UILabel *repeatCountLab;
 
-@property (strong, nonatomic) IBOutlet UITextField *durationField;
-@property (strong, nonatomic) IBOutlet UITextField *delayField;
+@property (strong, nonatomic) IBOutlet UILabel *durationLab;
+@property (strong, nonatomic) IBOutlet UILabel *delayLab;
+
 @property (strong, nonatomic) IBOutlet UIButton *PlayBtn;
 #pragma mark  -- 动画相关的配置
 @property (nonatomic,strong) NSString *animationID;//animation标识
@@ -41,7 +42,7 @@
 -(void)mInit{
     self.animationID = @"animationID";
     self.context = @"context";
-    self.duration = 0.2;
+    self.duration = 1;
     self.Delay  = 0 ;
     
     self.curve = UIViewAnimationCurveEaseInOut;
@@ -89,13 +90,18 @@
 - (IBAction)changRepeatAutoreverses:(UISwitch*)sender {
     self.repeatAutoreverses = sender.isOn;
 }
--(void)update{
-    self.duration = [self.durationField.text doubleValue];
-    self.Delay = [self.delayField.text doubleValue];
+- (IBAction)changeDuration:(UISlider *)sender {
+    self.duration = sender.value;
+    self.durationLab.text=[NSString stringWithFormat:@"%.2lf",self.duration];
 }
+- (IBAction)changeDealy:(UISlider*)sender {
+    self.Delay = sender.value;
+    self.delayLab.text = [NSString stringWithFormat:@"%.2lf",self.Delay];
+}
+
+
 #pragma mark  -- UIView启动动画
 - (IBAction)startAnimation:(id)sender {
-    [self update];
     [self startAnimation];
 }
 
@@ -166,11 +172,5 @@
     
 }
 
-#pragma mark  -- Blocks启动动画
-
-- (IBAction)blockStartAnimation:(id)sender {
-    [self update];
-    
-}
 
 @end
