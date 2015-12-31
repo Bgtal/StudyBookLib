@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8588AB491C3513130057E2B1 /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 8588AB481C3513130057E2B1 /* plane.png */; };
+		8588AB4D1C3521550057E2B1 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = 8588AB4C1C3521550057E2B1 /* a.png */; };
 		85CDC50E1C3425360032CB75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CDC50D1C3425360032CB75 /* main.m */; };
 		85CDC5111C3425360032CB75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CDC5101C3425360032CB75 /* AppDelegate.m */; };
 		85CDC5141C3425360032CB75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CDC5131C3425360032CB75 /* ViewController.m */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8588AB481C3513130057E2B1 /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
+		8588AB4C1C3521550057E2B1 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
 		85CDC5091C3425360032CB75 /* 动画之关键帧动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "动画之关键帧动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CDC50D1C3425360032CB75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85CDC50F1C3425360032CB75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				85CDC5181C3425360032CB75 /* Assets.xcassets */,
 				85CDC51A1C3425360032CB75 /* LaunchScreen.storyboard */,
 				85CDC51D1C3425360032CB75 /* Info.plist */,
+				8588AB481C3513130057E2B1 /* plane.png */,
+				8588AB4C1C3521550057E2B1 /* a.png */,
 				85CDC50C1C3425360032CB75 /* Supporting Files */,
 			);
 			path = "动画之关键帧动画";
@@ -136,8 +142,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8588AB491C3513130057E2B1 /* plane.png in Resources */,
 				85CDC51C1C3425360032CB75 /* LaunchScreen.storyboard in Resources */,
 				85CDC5191C3425360032CB75 /* Assets.xcassets in Resources */,
+				8588AB4D1C3521550057E2B1 /* a.png in Resources */,
 				85CDC5171C3425360032CB75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +306,7 @@
 				85CDC5221C3425360032CB75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
