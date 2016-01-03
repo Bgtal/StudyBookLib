@@ -11,6 +11,7 @@
 @interface ViewController ()
 @property (nonatomic,strong) UIImageView *flyImgView;
 @property (nonatomic,strong) UIButton *mbtn;
+@property (nonatomic,assign) CGFloat VWight;
 @end
 
 @implementation ViewController
@@ -23,40 +24,52 @@
 -(void)mInit{
     [self mbtn];
     [self flyImgView];
+    self.VWight=self.view.frame.size.width;
 }
 -(void)click:(UIButton *)btn{
     btn.enabled=NO;
     CGPoint flyCenter = self.flyImgView.center;
-    [UIView animateKeyframesWithDuration:13 delay:0.2 options:UIViewKeyframeAnimationOptionBeginFromCurrentState animations:^{
-        //从左下角到右上角,变无色
-        [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.2 animations:^{
-//            self.mbtn.center=CGPointMake(self.mbtn.center.x+40, self.mbtn.center.y-200);
-            self.flyImgView.center = CGPointMake(flyCenter.x+self.view.frame.size.width+100,flyCenter.y-180);
-//            self.flyImgView.transform = CGAffineTransformMakeRotation(M_PI_2*0.2);
-            self.flyImgView.transform = CGAffineTransformMakeScale(0.1, 0.1);
-//            self.flyImgView.alpha = 0;
+    [UIView animateKeyframesWithDuration:5 delay:0 options:UIViewKeyframeAnimationOptionLayoutSubviews animations:^{
+        //旋转-45/2
+        [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.03 animations:^{
+            self.flyImgView.transform = CGAffineTransformMakeRotation(-M_PI_4*0.5);
         }];
-      
-        //从无色到有色
-        [UIView addKeyframeWithRelativeStartTime:0.3 relativeDuration:0.01 animations:^{
-            self.flyImgView.center = CGPointMake(self.view.frame.size.width+50,flyCenter.y-130);
-            self.flyImgView.transform = CGAffineTransformMakeRotation(M_PI);
+        [UIView addKeyframeWithRelativeStartTime:0.03 relativeDuration:0.03 animations:^{
+            self.flyImgView.transform = CGAffineTransformMakeRotation(0);
         }];
-        //从右上角到左下角
-        [UIView addKeyframeWithRelativeStartTime:0.31 relativeDuration:0.5 animations:^{
-            self.flyImgView.alpha = 1;
-            self.flyImgView.center = CGPointMake(-flyCenter.x-100, flyCenter.y-90);
+        [UIView addKeyframeWithRelativeStartTime:0.06 relativeDuration:0.03 animations:^{
+            
+            self.flyImgView.transform = CGAffineTransformMakeRotation(-M_PI_4*0.5);
         }];
         
-        [UIView addKeyframeWithRelativeStartTime:0.6 relativeDuration:0.01 animations:^{
-            self.flyImgView.center = CGPointMake(-flyCenter.x,flyCenter.y-90);
+        //移动到右上角并旋转45/2
+        [UIView addKeyframeWithRelativeStartTime:0.09 relativeDuration:0.35 animations:^{
+            self.flyImgView.center = CGPointMake(flyCenter.x+self.VWight,flyCenter.y-280);
+            self.flyImgView.transform = CGAffineTransformMakeRotation(M_PI_4*0.5);
+            self.flyImgView.alpha = 0;
+
+        }];
+        //快速变化到下方
+        [UIView addKeyframeWithRelativeStartTime:0.44 relativeDuration:0.01 animations:^{
+            self.flyImgView.alpha=0.3;
+            self.flyImgView.center = CGPointMake(flyCenter.x+self.VWight, flyCenter.y-180);
+            self.flyImgView.transform = CGAffineTransformMakeRotation(M_PI_4*5);
+        }];
+        //移动到左下角
+        [UIView addKeyframeWithRelativeStartTime:0.45 relativeDuration:0.3 animations:^{
+            self.flyImgView.alpha = 1;
+            self.flyImgView.center = CGPointMake(-flyCenter.x, flyCenter.y-80);
+            self.flyImgView.transform =CGAffineTransformMakeRotation(M_PI);
+        }];
+        //
+        [UIView addKeyframeWithRelativeStartTime:0.75 relativeDuration:0.01 animations:^{
+            self.flyImgView.center = CGPointMake(-flyCenter.x, flyCenter.y+80);
             self.flyImgView.transform = CGAffineTransformIdentity;
         }];
-        
-        [UIView addKeyframeWithRelativeStartTime:0.75 relativeDuration:1 animations:^{
+        [UIView addKeyframeWithRelativeStartTime:0.76 relativeDuration:0.24 animations:^{
             self.flyImgView.center = flyCenter;
-//            self.mbtn.center=CGPointMake(self.mbtn.center.x+110, self.mbtn.center.y+220);
         }];
+        
     } completion:^(BOOL finished) {
         NSLog(@"over");
         btn.enabled = YES;
@@ -82,7 +95,7 @@
 - (UIImageView *)flyImgView {
 	if(_flyImgView == nil) {
 		_flyImgView = [[UIImageView alloc] init];
-        _flyImgView.frame = CGRectMake(50, 200, 50,50);
+        _flyImgView.frame = CGRectMake(50, 400, 50,50);
         _flyImgView.image = [UIImage imageNamed:@"a.png"];
         
         [self.view addSubview:_flyImgView];
