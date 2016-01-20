@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<party>
+    <player country="USA">
+        <name> TaylorSwift </name>
+        <class> Pop </class>
+        <lib>
+            <xixi>haha</xixi>
+            <huhu>huhu</huhu>
+        </lib>
+    </player>
+    <player country="American">
+        <name> Avril </name>
+        <class> Rock </class>
+    </player>
+</party>
