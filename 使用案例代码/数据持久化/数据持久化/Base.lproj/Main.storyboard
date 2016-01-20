@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="n9u-uR-EyN">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--数据持久化-->
+        <scene sceneID="CBg-dN-zNX">
+            <objects>
+                <tableViewController id="FdR-bI-wHb" customClass="MainViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NCe-DU-Pid">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="TZG-uZ-Gc6">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="9EP-oy-aOL" style="IBUITableViewCellStyleDefault" id="yTP-1L-QLp">
+                                        <rect key="frame" x="0.0" y="64" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="forceLeftToRight" tableViewCell="yTP-1L-QLp" id="rye-P7-8tg">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="NSUserDefaults" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9EP-oy-aOL">
+                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="SVq-PP-qCr" kind="push" id="2Fs-Wi-Qv1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="FkV-TW-aZG" style="IBUITableViewCellStyleDefault" id="fJn-9a-imr">
+                                        <rect key="frame" x="0.0" y="108" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fJn-9a-imr" id="Zjw-BO-FFd">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="PList" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FkV-TW-aZG">
+                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="h2i-zT-TKU" kind="push" id="T4C-xr-xqT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="7BV-4a-PM3" style="IBUITableViewCellStyleDefault" id="jCZ-6z-9pa">
+                                        <rect key="frame" x="0.0" y="152" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jCZ-6z-9pa" id="95E-f6-5Nm">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="归档" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7BV-4a-PM3">
+                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="6am-Eh-XHm" kind="push" id="rac-Ub-uqF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="UbO-nd-evx" style="IBUITableViewCellStyleDefault" id="SFd-Zy-CuJ">
+                                        <rect key="frame" x="0.0" y="196" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SFd-Zy-CuJ" id="FC6-p6-O6I">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="SQLite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UbO-nd-evx">
+                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="QHN-7j-FWx" kind="push" id="9II-Nv-xd0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ekK-Uv-evj" style="IBUITableViewCellStyleDefault" id="FBg-II-DIw">
+                                        <rect key="frame" x="0.0" y="240" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FBg-II-DIw" id="Uh1-KH-X6r">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="CoreData" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ekK-Uv-evj">
+                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="Z41-aP-ljP" kind="push" id="84c-EL-t7J"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="FdR-bI-wHb" id="eG8-Fa-WnR"/>
+                            <outlet property="delegate" destination="FdR-bI-wHb" id="33U-1t-lNQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="数据持久化" id="BxD-dd-82N"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sS7-sT-d2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1287" y="279"/>
+        </scene>
+        <!--NSUserDefaults-->
+        <scene sceneID="gmg-7y-89d">
+            <objects>
+                <viewController id="SVq-PP-qCr" customClass="NSUserDefaultsController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rfB-yv-XU6"/>
+                        <viewControllerLayoutGuide type="bottom" id="tW7-db-tHj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PsA-GV-JPz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAx-Ek-0Da">
+                                <rect key="frame" x="55" y="229" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="添加数据"/>
+                                <connections>
+                                    <action selector="addData:" destination="SVq-PP-qCr" eventType="touchUpInside" id="cmr-cf-jxo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVG-Y4-c2J">
+                                <rect key="frame" x="265" y="229" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="删除数据"/>
+                                <connections>
+                                    <action selector="deleteData:" destination="SVq-PP-qCr" eventType="touchUpInside" id="qVM-6p-b87"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5f-Ms-7Qc">
+                                <rect key="frame" x="73" y="335" width="267" height="206"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.85665246212121215" green="0.85665246212121215" blue="0.85665246212121215" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCS-0D-Ft1">
+                                <rect key="frame" x="170" y="229" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="读取数据"/>
+                                <connections>
+                                    <action selector="readData:" destination="SVq-PP-qCr" eventType="touchUpInside" id="puF-xr-PEe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NSUserDefaults" id="KIe-z1-UWX"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="showLab" destination="h5f-Ms-7Qc" id="IZH-CP-GRW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7IZ-Td-R0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="219"/>
+        </scene>
+        <!--PList-->
+        <scene sceneID="qDd-DA-fG6">
+            <objects>
+                <viewController id="h2i-zT-TKU" customClass="PListrController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6rb-BP-dny"/>
+                        <viewControllerLayoutGuide type="bottom" id="RGm-bl-VEF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4dd-FU-2Hw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTo-lP-udR">
+                                <rect key="frame" x="42" y="131" width="93" height="30"/>
+                                <animations/>
+                                <state key="normal" title="从Bundle读取"/>
+                                <connections>
+                                    <action selector="readBundle:" destination="h2i-zT-TKU" eventType="touchUpInside" id="D4c-as-kfh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpR-08-l8l">
+                                <rect key="frame" x="20" y="381" width="374" height="312"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.86805555555555558" green="0.86805555555555558" blue="0.86805555555555558" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cue-vQ-wq5">
+                                <rect key="frame" x="42" y="169" width="77" height="30"/>
+                                <animations/>
+                                <state key="normal" title="写入到Data"/>
+                                <connections>
+                                    <action selector="saveData:" destination="h2i-zT-TKU" eventType="touchUpInside" id="j8l-YT-ZDo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYn-cc-A9w">
+                                <rect key="frame" x="42" y="207" width="77" height="30"/>
+                                <animations/>
+                                <state key="normal" title="从Data读取"/>
+                                <connections>
+                                    <action selector="readData:" destination="h2i-zT-TKU" eventType="touchUpInside" id="ffb-fm-kt3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PList" id="yol-Hd-hmC"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="showLab" destination="hpR-08-l8l" id="Uk9-QK-T2C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xvw-qD-4Ak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2287" y="279"/>
+        </scene>
+        <!--CoreData-->
+        <scene sceneID="7Jx-T1-BwV">
+            <objects>
+                <viewController id="Z41-aP-ljP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0tu-ej-RK7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lfy-cG-E42"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LPI-MQ-3wU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="不怎么用就不写了" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Um-gZ-QI2">
+                                <rect key="frame" x="75" y="272" width="295" height="172"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CoreData" id="bQ8-zH-1ns"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwf-c5-QUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="1164"/>
+        </scene>
+        <!--SQLite-->
+        <scene sceneID="YUu-37-2lJ">
+            <objects>
+                <viewController id="QHN-7j-FWx" customClass="SQLiteController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DDZ-hS-ljL"/>
+                        <viewControllerLayoutGuide type="bottom" id="JUQ-pO-iRW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YaG-sv-Mi1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eg5-t5-MaR">
+                                <rect key="frame" x="39" y="227" width="338" height="407"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.86560921717171713" green="0.86560921717171713" blue="0.86560921717171713" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgv-s1-H6k">
+                                <rect key="frame" x="165" y="99" width="45" height="30"/>
+                                <animations/>
+                                <state key="normal" title="创建表"/>
+                                <connections>
+                                    <action selector="createTable:" destination="QHN-7j-FWx" eventType="touchUpInside" id="ccD-nF-9wy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57U-eU-UPA">
+                                <rect key="frame" x="253" y="99" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="添加数据"/>
+                                <connections>
+                                    <action selector="addData:" destination="QHN-7j-FWx" eventType="touchUpInside" id="8S7-aZ-6JD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7g-fT-ZFa">
+                                <rect key="frame" x="39" y="131" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="删除数据"/>
+                                <connections>
+                                    <action selector="deleteData:" destination="QHN-7j-FWx" eventType="touchUpInside" id="CYa-XZ-E8B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esF-Gp-KRh">
+                                <rect key="frame" x="157" y="131" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="更改数据"/>
+                                <connections>
+                                    <action selector="changeData:" destination="QHN-7j-FWx" eventType="touchUpInside" id="coO-v5-J9R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBa-8M-Sg9">
+                                <rect key="frame" x="253" y="131" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="查询数据"/>
+                                <connections>
+                                    <action selector="selectData:" destination="QHN-7j-FWx" eventType="touchUpInside" id="qIs-7L-xCe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRu-72-fP4">
+                                <rect key="frame" x="39" y="100" width="75" height="30"/>
+                                <animations/>
+                                <state key="normal" title="创建数据库"/>
+                                <connections>
+                                    <action selector="createDB:" destination="QHN-7j-FWx" eventType="touchUpInside" id="0ot-ps-kfg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SQLite" id="LoI-BG-RTe"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="showLab" destination="Eg5-t5-MaR" id="3No-SU-4m2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rnQ-GB-Tsq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1287" y="1164"/>
+        </scene>
+        <!--归档-->
+        <scene sceneID="4Zx-B4-dcO">
+            <objects>
+                <viewController id="6am-Eh-XHm" customClass="FileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QrG-U2-g7l"/>
+                        <viewControllerLayoutGuide type="bottom" id="ga5-NY-ot3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oOZ-U3-8wL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXD-SL-dnH">
+                                <rect key="frame" x="78" y="160" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="归档"/>
+                                <connections>
+                                    <action selector="saveFile:" destination="6am-Eh-XHm" eventType="touchUpInside" id="xEr-K7-LO4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFk-KK-pXB">
+                                <rect key="frame" x="312" y="160" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="解档"/>
+                                <connections>
+                                    <action selector="readFile:" destination="6am-Eh-XHm" eventType="touchUpInside" id="ksI-nD-irB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aox-jA-oXt">
+                                <rect key="frame" x="38" y="363" width="338" height="316"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.86935763888888884" green="0.86935763888888884" blue="0.86935763888888884" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zrw-1O-eUG">
+                                <rect key="frame" x="153" y="228" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Zrw-1O-eUG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="归档" id="EYV-Ux-ZjL"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="showLab" destination="aox-jA-oXt" id="EUj-Vi-aac"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yph-wb-Grs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="1164"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Myj-V8-K4J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n9u-uR-EyN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6cj-A5-dlT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FdR-bI-wHb" kind="relationship" relationship="rootViewController" id="tni-LJ-6ho"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPB-38-IlX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584" y="271"/>
+        </scene>
+    </scenes>
+</document>
