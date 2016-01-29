@@ -11,7 +11,6 @@
 @interface GetViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *showLab;
 @property (nonatomic,strong) NSString *urlStr;
-@property (nonatomic,weak) GetViewController *content;
 @end
 
 @implementation GetViewController
@@ -28,9 +27,9 @@
 }
 
 - (IBAction)getBtn:(id)sender {
-    self.urlStr =[self.urlStr stringByAppendingString:@"?ssnb=haha&name=limin&age=13"];
+    NSString *urlStr =[self.urlStr stringByAppendingString:@"?ssnb=chacha&name=limin&age=13"];
     //创建请求对象
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.urlStr]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
     //NSURLSession *session = [NSURLSession sharedSession];
     
 //    NSOperationQueue *queue = [[NSOperationQueue alloc]init];
@@ -50,24 +49,25 @@
 //        NSLog(@"location:%@\n",[location description]);//缓存地址
 //        NSLog(@"response:%@\n",[response description]);//返回的头文件信息
 //        NSLog(@"error:%@\n",[error description]);
-        NSLog(@"str:%@",[NSString stringWithContentsOfURL:location]);
-        NSDictionary *dic = [self.content jiexi:[NSData dataWithContentsOfFile:location.path]];
+        NSLog(@"str:%@",location);
+        NSDictionary *dic = [GetViewController jiexi:[NSData dataWithContentsOfFile:location.path]];
         NSLog(@"dic:%@\n",[dic description]);
         dispatch_async(dispatch_get_main_queue(), ^{
             self.showLab.text = [dic description];
+            [task cancel];
         });
     }];
     [task resume];
     
-    return;
-    NSURLSessionDataTask *dTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSDictionary *dic =[self.content jiexi:data];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.showLab.text = [dic description];
-            
-        });
-    }];
-    [dTask resume];
+//    return;
+//    NSURLSessionDataTask *dTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        NSDictionary *dic =[GetViewController jiexi:data];
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            self.showLab.text = [dic description];
+//            
+//        });
+//    }];
+//    [dTask resume];
 
 }
 - (IBAction)postBtn:(id)sender {
@@ -109,39 +109,50 @@
 //    }];
 //    [dta resume];
 //    return;
+    
+    
     NSMutableURLRequest *mRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.urlStr]];//默认get
     mRequest.HTTPMethod = @"POST";//设置为post
-    [mRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+//    [mRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     NSMutableDictionary *dic = [[NSMutableDictionary alloc]initWithCapacity:3];
     [dic setObject:@"ssnb" forKey:@"name"];
-    [dic setObject:@14 forKey:@"age"];
+    [dic setObject:@"14" forKey:@"age"];
     [dic setObject:@"xixi" forKey:@"oth"];
-    NSError *err = nil;
     NSLog(@"dic:%@",dic);
-    NSData *data = [NSJSONSerialization dataWithJSONObject:dic  options:(NSJSONWritingPrettyPrinted) error:&err];
-    mRequest.HTTPBody =data;
     
+    NSArray *allkey = [dic allKeys];
+    NSMutableString *mstr= [[NSMutableString alloc]initWithCapacity:100];
+    for (NSString *key in allkey) {
+        [mstr appendString:key];
+        [mstr appendString:@"="];
+        [mstr appendString:[dic objectForKey:key]];
+        [mstr appendString:@"&"];
+    }
+    NSString *st = [mstr substringToIndex:(mstr.length-1)];
+    NSData *data  =[st dataUsingEncoding:NSUTF8StringEncoding];
+    
+//    NSData *data = [NSJSONSerialization dataWithJSONObject:dic  options:(NSJSONWritingPrettyPrinted) error:&err];
+    mRequest.HTTPBody =data;
+    NSLog(@"mRequest:%@",[mRequest description]);
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:mRequest completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSString *str= [NSString stringWithContentsOfURL:location];
-        NSLog(@"str:%@",str);
+//        NSLog(@"location:%@",location);
+//        NSLog(@"response:%@",response);
+//        NSLog(@"%@",[NSString stringWithContentsOfFile:location.path]);
+        NSDictionary *str= [GetViewController jiexi:[NSData dataWithContentsOfFile:location.path]];
+//        NSLog(@"str:%@",str);
         dispatch_async(dispatch_get_main_queue(), ^{
 //            self.showLab.text = [dic description];
-            self.showLab.text = str;
+            self.showLab.text = [str description];
+            [task cancel];
         });
     }];
     [task resume];
 }
 
--(NSDictionary *)jiexi:(NSData *)data{
++(NSDictionary *)jiexi:(NSData *)data{
     return  [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableContainers) error:nil];
 }
 
-- (GetViewController *)content {
-	if(_content == nil) {
-		_content = self;
-	}
-	return _content;
-}
 
 @end
